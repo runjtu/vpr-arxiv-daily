@@ -43,15 +43,15 @@ jobs:
           pip install arxiv
           pip install requests
           pip install pyyaml
-          pip install dashscope
+          #pip install dashscope
 
       - name: Run daily arxiv 
         run: |
           python daily_arxiv.py
           
       - name: Push new vpr-arxiv-daily.md
-        env:
-           DASHSCOPE_API_KEY: ${{ secrets.QWEN_API_KEY }}
+        #env:
+           #DASHSCOPE_API_KEY: ${{ secrets.QWEN_API_KEY }}
         uses: github-actions-x/commit@v2.9
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
