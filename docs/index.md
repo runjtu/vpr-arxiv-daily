@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Updated on 2025.03.17
+## Updated on 2025.03.20
 > Usage instructions: [here](./docs/README.md#usage)
 
 ## SLAM
@@ -4397,13 +4397,27 @@ layout: default
 |**2022-07-29**|**Neural Density-Distance Fields**|Itsuki Ueda et.al.|[2207.14455](http://arxiv.org/abs/2207.14455)|**[link](https://github.com/ueda0319/neddf)**|
 |**2022-07-27**|**Is Attention All NeRF Needs?**|Mukund Varma T et.al.|[2207.13298](http://arxiv.org/abs/2207.13298)|null|
 
+## General Place Recognition
 
+| Publish Date | Title | Authors | PDF | Code |
+|:---------|:-----------------------|:---------|:------|:------|
+|**2025-03-19**|**Euclid Quick Data Release (Q1). A first view of the star-forming main sequence in the Euclid Deep Fields**|Euclid Collaboration et.al.|[2503.15314](http://arxiv.org/abs/2503.15314)|null|
+|**2025-03-19**|**SemanticFlow: A Self-Supervised Framework for Joint Scene Flow Prediction and Instance Segmentation in Dynamic Environments**|Yinqi Chen et.al.|[2503.14837](http://arxiv.org/abs/2503.14837)|null|
+|**2025-03-18**|**These Magic Moments: Differentiable Uncertainty Quantification of Radiance Field Models**|Parker Ewen et.al.|[2503.14665](http://arxiv.org/abs/2503.14665)|null|
+|**2025-03-18**|**Multi-view Reconstruction via SfM-guided Monocular Depth Estimation**|Haoyu Guo et.al.|[2503.14483](http://arxiv.org/abs/2503.14483)|null|
+|**2025-03-18**|**ExDDV: A New Dataset for Explainable Deepfake Detection in Video**|Vlad Hondru et.al.|[2503.14421](http://arxiv.org/abs/2503.14421)|**[link](https://github.com/vladhondru25/exddv)**|
+|**2025-03-18**|**A-SCoRe: Attention-based Scene Coordinate Regression for wide-ranging scenarios**|Huy-Hoang Bui et.al.|[2503.13982](http://arxiv.org/abs/2503.13982)|**[link](https://github.com/ais-lab/a-score)**|
+|**2025-03-18**|**ChatBEV: A Visual Language Model that Understands BEV Maps**|Qingyao Xu et.al.|[2503.13938](http://arxiv.org/abs/2503.13938)|null|
+|**2025-03-18**|**PSA-SSL: Pose and Size-aware Self-Supervised Learning on LiDAR Point Clouds**|Barza Nisar et.al.|[2503.13914](http://arxiv.org/abs/2503.13914)|null|
+|**2025-03-17**|**TextInVision: Text and Prompt Complexity Driven Visual Text Generation Benchmark**|Forouzan Fallah et.al.|[2503.13730](http://arxiv.org/abs/2503.13730)|null|
+|**2025-03-17**|**Improving Geometric Consistency for 360-Degree Neural Radiance Fields in Indoor Scenarios**|Iryna Repinetska et.al.|[2503.13710](http://arxiv.org/abs/2503.13710)|null|
 
 [contributors-shield]: https://img.shields.io/github/contributors/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
-[contributors-url]: https://github.com/runjtu/vpr-arxiv-daily/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
-[forks-url]: https://github.com/runjtu/vpr-arxiv-daily/network/members
-[stars-shield]: https://img.shields.io/github/stars/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
-[stars-url]: https://github.com/runjtu/vpr-arxiv-daily/stargazers
-[issues-shield]: https://img.shields.io/github/issues/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
-[issues-url]: https://github.com/runjtu/vpr-arxiv-daily/issues
+[contributors-url]: https://github.com/Vincentqyw/vpr-arxiv-daily/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Vincentqyw/vpr-arxiv-daily.svg?style=for-the-badge
+[forks-url]: https://github.com/Vincentqyw/vpr-arxiv-daily/network/members
+[stars-shield]: https://img.shields.io/github/stars/Vincentqyw/vpr-arxiv-daily.svg?style=for-the-badge
+[stars-url]: https://github.com/Vincentqyw/vpr-arxiv-daily/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Vincentqyw/vpr-arxiv-daily.svg?style=for-the-badge
+[issues-url]: https://github.com/Vincentqyw/vpr-arxiv-daily/issues
+
