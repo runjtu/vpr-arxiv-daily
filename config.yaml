@@ -8,17 +8,14 @@ show_badge: True
 max_results: 20
 
 publish_readme: True
-publish_gitpage: True
+publish_gitpage: False
 publish_wechat: False #
 
 # file paths
-json_readme_path: './docs/arxiv-daily.json'
-json_gitpage_path: './docs/arxiv-daily-web.json'
-json_wechat_path: './docs/arxiv-daily-wechat.json'
+json_readme_path: './docs/vpr-arxiv-daily.json'
 
 md_readme_path: 'README.md'
-md_gitpage_path: './docs/index.md'
-md_wechat_path: './docs/wechat.md'
+
 
 # keywords to search
 # topics: task/technique/dataset...
