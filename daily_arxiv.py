@@ -7,9 +7,9 @@ import logging
 import argparse
 import datetime
 import requests
-import dashscope
+#import dashscope
 
-dashscope.api_key = os.environ.get("DASHSCOPE_API_KEY")
+#dashscope.api_key = os.environ.get("DASHSCOPE_API_KEY")
 
 
 logging.basicConfig(format='[%(asctime)s %(levelname)s] %(message)s',
@@ -102,27 +102,27 @@ def get_code_link(qword: str) -> str:
 #"""
 
 
-def llm_generate_summary(prompt):
+#def llm_generate_summary(prompt):
+#
+#    msg = prompt_formate.format(context=prompt)
+#    from http import HTTPStatus
 
-    msg = prompt_formate.format(context=prompt)
-    from http import HTTPStatus
-
-    response = dashscope.Generation.call(
-        model=dashscope.Generation.Models.qwen_turbo,
-        prompt=msg
-    )
-    # 如果调用成功，则打印模型的输出
-    if response.status_code == HTTPStatus.OK:
-        logging.info(response.output.text)
-        rsp = response.output.text
-    # 如果调用失败，则打印出错误码与失败信息
-    else:
-        logging.error("can not generate response, use old message")
-        logging.error(response.code)
-        logging.error(response.message)
-        rsp = prompt
-
-    return rsp
+ #   response = dashscope.Generation.call(
+ #       model=dashscope.Generation.Models.qwen_turbo,
+  #      prompt=msg
+  #  )
+ #   # 如果调用成功，则打印模型的输出
+ #   if response.status_code == HTTPStatus.OK:
+  #      logging.info(response.output.text)
+  #      rsp = response.output.text
+  #  # 如果调用失败，则打印出错误码与失败信息
+  #  else:
+  #      logging.error("can not generate response, use old message")
+  #      logging.error(response.code)
+  #     logging.error(response.message)
+  #      rsp = prompt
+#
+ #   return rsp
 
 
 def get_daily_papers(topic, query="agent", max_results=2):
