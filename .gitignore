@@ -1,3 +1,14 @@
+.cookie
+.apikey
+
+raw_pdfs
+run.log
+text_parsed
+__pycache__
+.DS_Store
+prompt1
+results
+
 CMakeLists.txt.user
 CMakeLists_modified.txt
 

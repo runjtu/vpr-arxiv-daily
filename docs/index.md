@@ -2,8 +2,48 @@
 layout: default
 ---
 
-## Updated on 2025.03.20
-> Usage instructions: [here](./docs/README.md#usage)
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+
+# Talking-Face Research Papers (With GPT Analysis)
+### Automatically Updated on 2025.03.20
+Current Search Keywords: `Talking Face`, `Talking Head`, `Visual Dubbing`, `Face Genertation`, `Lip Sync`, `Talker`, `Portrait`, `Talking Video`, `Head Synthesis`, `Face Reenactment`, `Wav2Lip`, `Talking Avatar`, `Lip Generation`, `Lip-Synchronization`, `Portrait Animation`, `Facial Animation`, `Lip Expert`
+
+> If you have any other keywords, please feel free to let us know :) 
+
+> We now offer support for article analysis through large language models. You can view this feature by clicking the `Paper Analysis` link below. Currently, we are experimenting with `Claude.ai` or `Moonshot AI`. This is to help everyone **quickly skim** through the latest research papers. 
+
+ 
+
+<details>
+  <summary>Recent Trends (by AI)</summary>
+  <ol>
+    <li>Based on the provided snippets, I have identified the top five prominent keywords and synthesized the key themes, methodologies, findings, and shifts in perspective from the papers:
+
+<b>1. One-shot Talking Face Generation</b>: 
+The concept of generating realistic talking faces from a single image is a recurring theme across multiple papers. Techniques like NeRFFaceSpeech and AniTalker emphasize creating lifelike animations using minimal input data. These methods leverage generative models and audio-driven dynamics to produce natural-looking facial movements. The key challenge addressed is achieving high-quality synthesis while preserving identity and visual details.
+
+<b>2. Lip Synchronization and Audio-Visual Correlation</b>: 
+Ensuring accurate lip synchronization with corresponding audio is critical in talking face generation. Papers like "Audio-Visual Speech Representation Expert" and SwapTalk focus on synchronizing lip movements with audio while maintaining the visual quality of the generated faces. The methodologies involve advanced neural networks and latent space manipulation to enhance synchronization and minimize artifacts.
+
+<b>3. Real-time Rendering and Efficiency</b>: 
+The need for fast and efficient rendering is highlighted in works such as GSTalker. This model utilizes deformable Gaussian splatting to enable real-time audio-driven face generation. The emphasis is on reducing training time and improving rendering speeds without compromising the quality of the generated faces. This shift towards real-time applications reflects the growing demand for practical and scalable solutions in various domains.
+
+<b>4. Multimodal Emotion Representation</b>: 
+EMOPortraits introduces the integration of emotional expressions into talking face avatars. This approach enhances the realism and expressiveness of generated faces by incorporating emotion-driven dynamics. The methodology involves multimodal inputs and cross-driving synthesis, where avatars are animated with different emotional states, addressing the challenge of creating more engaging and lifelike digital avatars.
+
+<b>5. Identity Preservation and Customization</b>: 
+Maintaining the unique identity of the subject while generating talking faces is a crucial aspect explored in SwapTalk and AniTalker. These papers propose innovative solutions for identity-decoupled motion encoding and one-shot customization. The goal is to create personalized talking faces that retain the distinct features of the original subject, enabling applications in personalized media and communication.
+
+Overall, the interconnectedness among these papers highlights a trend towards achieving higher realism, efficiency, and customization in talking face generation. The field is moving towards developing more practical and scalable solutions that can be applied in real-time scenarios, with an increasing focus on emotional expressiveness and identity preservation. Researchers are exploring advanced neural network architectures, generative models, and multimodal approaches to push the boundaries of what's possible in this rapidly evolving domain.</li>
+  </ol>
+</details>
+
+[>>>> Each Paper Analysis (by AI) <<<<](https://github.com/runjtu/vpr-arxiv-daily/blob/main/analysis_by_ai.md) 
+
+[Web Page](https://liutaocode.github.io/talking-face-arxiv-daily/) ([Scrape Code](https://github.com/liutaocode/talking-face-arxiv-daily)) 
 
 ## SLAM
 
@@ -1215,7 +1255,7 @@ layout: default
 
 | Publish Date | Title | Authors | PDF | Code |
 |:---------|:-----------------------|:---------|:------|:------|
-|**2025-03-13**|**ImageScope: Unifying Language-Guided Image Retrieval via Large Multimodal Model Collective Reasoning**|Pengfei Luo et.al.|[2503.10166](http://arxiv.org/abs/2503.10166)|**[link](https://github.com/pengfei-luo/ImageScope)**|
+|**2025-03-13**|**ImageScope: Unifying Language-Guided Image Retrieval via Large Multimodal Model Collective Reasoning**|Pengfei Luo et.al.|[2503.10166](http://arxiv.org/abs/2503.10166)|null|
 |**2025-03-12**|**Revisiting Medical Image Retrieval via Knowledge Consolidation**|Yang Nan et.al.|[2503.09370](http://arxiv.org/abs/2503.09370)|null|
 |**2025-03-11**|**CQVPR: Landmark-aware Contextual Queries for Visual Place Recognition**|Dongyue Li et.al.|[2503.08170](http://arxiv.org/abs/2503.08170)|null|
 |**2025-03-10**|**Find your Needle: Small Object Image Retrieval via Multi-Object Attention Optimization**|Michael Green et.al.|[2503.07038](http://arxiv.org/abs/2503.07038)|null|
@@ -4397,27 +4437,13 @@ layout: default
 |**2022-07-29**|**Neural Density-Distance Fields**|Itsuki Ueda et.al.|[2207.14455](http://arxiv.org/abs/2207.14455)|**[link](https://github.com/ueda0319/neddf)**|
 |**2022-07-27**|**Is Attention All NeRF Needs?**|Mukund Varma T et.al.|[2207.13298](http://arxiv.org/abs/2207.13298)|null|
 
-## General Place Recognition
 
-| Publish Date | Title | Authors | PDF | Code |
-|:---------|:-----------------------|:---------|:------|:------|
-|**2025-03-19**|**Euclid Quick Data Release (Q1). A first view of the star-forming main sequence in the Euclid Deep Fields**|Euclid Collaboration et.al.|[2503.15314](http://arxiv.org/abs/2503.15314)|null|
-|**2025-03-19**|**SemanticFlow: A Self-Supervised Framework for Joint Scene Flow Prediction and Instance Segmentation in Dynamic Environments**|Yinqi Chen et.al.|[2503.14837](http://arxiv.org/abs/2503.14837)|null|
-|**2025-03-18**|**These Magic Moments: Differentiable Uncertainty Quantification of Radiance Field Models**|Parker Ewen et.al.|[2503.14665](http://arxiv.org/abs/2503.14665)|null|
-|**2025-03-18**|**Multi-view Reconstruction via SfM-guided Monocular Depth Estimation**|Haoyu Guo et.al.|[2503.14483](http://arxiv.org/abs/2503.14483)|null|
-|**2025-03-18**|**ExDDV: A New Dataset for Explainable Deepfake Detection in Video**|Vlad Hondru et.al.|[2503.14421](http://arxiv.org/abs/2503.14421)|**[link](https://github.com/vladhondru25/exddv)**|
-|**2025-03-18**|**A-SCoRe: Attention-based Scene Coordinate Regression for wide-ranging scenarios**|Huy-Hoang Bui et.al.|[2503.13982](http://arxiv.org/abs/2503.13982)|**[link](https://github.com/ais-lab/a-score)**|
-|**2025-03-18**|**ChatBEV: A Visual Language Model that Understands BEV Maps**|Qingyao Xu et.al.|[2503.13938](http://arxiv.org/abs/2503.13938)|null|
-|**2025-03-18**|**PSA-SSL: Pose and Size-aware Self-Supervised Learning on LiDAR Point Clouds**|Barza Nisar et.al.|[2503.13914](http://arxiv.org/abs/2503.13914)|null|
-|**2025-03-17**|**TextInVision: Text and Prompt Complexity Driven Visual Text Generation Benchmark**|Forouzan Fallah et.al.|[2503.13730](http://arxiv.org/abs/2503.13730)|null|
-|**2025-03-17**|**Improving Geometric Consistency for 360-Degree Neural Radiance Fields in Indoor Scenarios**|Iryna Repinetska et.al.|[2503.13710](http://arxiv.org/abs/2503.13710)|null|
 
 [contributors-shield]: https://img.shields.io/github/contributors/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
-[contributors-url]: https://github.com/Vincentqyw/vpr-arxiv-daily/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/Vincentqyw/vpr-arxiv-daily.svg?style=for-the-badge
-[forks-url]: https://github.com/Vincentqyw/vpr-arxiv-daily/network/members
-[stars-shield]: https://img.shields.io/github/stars/Vincentqyw/vpr-arxiv-daily.svg?style=for-the-badge
-[stars-url]: https://github.com/Vincentqyw/vpr-arxiv-daily/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Vincentqyw/vpr-arxiv-daily.svg?style=for-the-badge
-[issues-url]: https://github.com/Vincentqyw/vpr-arxiv-daily/issues
-
+[contributors-url]: https://github.com/runjtu/vpr-arxiv-daily/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
+[forks-url]: https://github.com/runjtu/vpr-arxiv-daily/network/members
+[stars-shield]: https://img.shields.io/github/stars/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
+[stars-url]: https://github.com/runjtu/vpr-arxiv-daily/stargazers
+[issues-shield]: https://img.shields.io/github/issues/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
+[issues-url]: https://github.com/runjtu/vpr-arxiv-daily/issues
