@@ -94,12 +94,12 @@ def get_code_link(qword: str) -> str:
     return code_link
 
 
-prompt_formate = """
-## context
-{context}
-## task
-请你将上述论文摘要翻译为中文，不要输出其他任何无关内容，注意输出的内容中不能包含"|"字符
-"""
+#prompt_formate = """
+### context
+#{context}
+### task
+#请你将上述论文摘要翻译为中文，不要输出其他任何无关内容，注意输出的内容中不能包含"|"字符
+#"""
 
 
 def llm_generate_summary(prompt):
@@ -151,7 +151,7 @@ def get_daily_papers(topic, query="agent", max_results=2):
         code_url = base_url + paper_id  # TODO
 
         paper_abstract = result.summary.replace("\n", " ")
-        paper_abstract = llm_generate_summary(paper_abstract)
+        #paper_abstract = llm_generate_summary(paper_abstract)
         paper_abstract = paper_abstract.replace("|", ",")
         paper_abstract = paper_abstract.replace("\n", " ")
 
@@ -456,5 +456,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     config = load_config(args.config_path)
     config = {**config, 'update_paper_links': args.update_paper_links}
-    print(f"apikey is {dashscope.api_key}")
+    #print(f"apikey is {dashscope.api_key}")
     demo(**config)
