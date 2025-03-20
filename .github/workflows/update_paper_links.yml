@@ -43,7 +43,7 @@ jobs:
           pip install arxiv
           pip install requests
           pip install pyyaml
-          pip install dashscope
+          #pip install dashscope
           
       - name: Run daily arxiv 
         run: |
