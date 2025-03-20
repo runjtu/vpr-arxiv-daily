@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-# Talking-Face Research Papers (With GPT Analysis)
+# vpr Research Papers (With GPT Analysis)
 > Updated on 2025.03.20
 Current Search Keywords: `Talking Face`, `Talking Head`, `Visual Dubbing`, `Face Genertation`, `Lip Sync`, `Talker`, `Portrait`, `Talking Video`, `Head Synthesis`, `Face Reenactment`, `Wav2Lip`, `Talking Avatar`, `Lip Generation`, `Lip-Synchronization`, `Portrait Animation`, `Facial Animation`, `Lip Expert`
 
@@ -37,15 +37,16 @@ Overall, the interconnectedness among these papers highlights a trend towards ac
   </ol>
 </details>
 
-[>>>> Each Paper Analysis (by AI) <<<<](https://github.com/liutaocode/talking-face-arxiv-daily/blob/main/analysis_by_ai.md) 
+[>>>> Each Paper Analysis (by AI) <<<<](https://github.com/runjtu/vpr-arxiv-daily/blob/main/analysis_by_ai.md) 
 
-[Web Page](https://liutaocode.github.io/talking-face-arxiv-daily/) ([Scrape Code](https://github.com/liutaocode/talking-face-arxiv-daily)) 
+[Web Page](https://runjtu.github.io/vpr-arxiv-daily/) ([Scrape Code](https://github.com/runjtu/vpr-arxiv-daily)) 
 
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li><a href=#talking-face>Talking Face</a></li>
     <li><a href=#image-animation>Image Animation</a></li>
+    <li><a href=#general-place-recognition>General Place Recognition</a></li>
   </ol>
 </details>
 
@@ -807,6 +808,21 @@ Overall, the interconnectedness among these papers highlights a trend towards ac
 
 <p align=right>(<a href=#updated-on-20250320>back to top</a>)</p>
 
+## General Place Recognition
+
+- 2025-03-18, **These Magic Moments: Differentiable Uncertainty Quantification of Radiance Field Models**, Parker Ewen et.al., Paper: [http://arxiv.org/abs/2503.14665](http://arxiv.org/abs/2503.14665)
+- 2025-03-19, **SemanticFlow: A Self-Supervised Framework for Joint Scene Flow Prediction and Instance Segmentation in Dynamic Environments**, Yinqi Chen et.al., Paper: [http://arxiv.org/abs/2503.14837](http://arxiv.org/abs/2503.14837)
+- 2025-03-17, **Scale Efficient Training for Large Datasets**, Qing Zhou et.al., Paper: [http://arxiv.org/abs/2503.13385](http://arxiv.org/abs/2503.13385)
+- 2025-03-18, **PSA-SSL: Pose and Size-aware Self-Supervised Learning on LiDAR Point Clouds**, Barza Nisar et.al., Paper: [http://arxiv.org/abs/2503.13914](http://arxiv.org/abs/2503.13914)
+- 2025-03-17, **Multi-Platform Teach-and-Repeat Navigation by Visual Place Recognition Based on Deep-Learned Local Features**, Václav Truhlařík et.al., Paper: [http://arxiv.org/abs/2503.13090](http://arxiv.org/abs/2503.13090)
+- 2025-03-17, **Learning-based 3D Reconstruction in Autonomous Driving: A Comprehensive Survey**, Liewen Liao et.al., Paper: [http://arxiv.org/abs/2503.14537](http://arxiv.org/abs/2503.14537)
+- 2025-03-17, **Improving Geometric Consistency for 360-Degree Neural Radiance Fields in Indoor Scenarios**, Iryna Repinetska et.al., Paper: [http://arxiv.org/abs/2503.13710](http://arxiv.org/abs/2503.13710)
+- 2025-03-17, **Clustering is back: Reaching state-of-the-art LiDAR instance segmentation without training**, Corentin Sautier et.al., Paper: [http://arxiv.org/abs/2503.13203](http://arxiv.org/abs/2503.13203)
+- 2025-03-18, **ChatBEV: A Visual Language Model that Understands BEV Maps**, Qingyao Xu et.al., Paper: [http://arxiv.org/abs/2503.13938](http://arxiv.org/abs/2503.13938)
+- 2025-03-18, **A-SCoRe: Attention-based Scene Coordinate Regression for wide-ranging scenarios**, Huy-Hoang Bui et.al., Paper: [http://arxiv.org/abs/2503.13982](http://arxiv.org/abs/2503.13982), Code: **[https://github.com/ais-lab/a-score](https://github.com/ais-lab/a-score)**
+
+<p align=right>(<a href=#updated-on-20250320>back to top</a>)</p>
+
 Notes: 
 
 * We have modified the `sorting rule` of the above table to prioritize papers based on the time of their latest update rather than their initial publication date. If an article has been recently modified, it will appear earlier in the list. 
@@ -821,12 +837,12 @@ Function added:
 
 * Supports the analysis of more than 10 papers in a single conversation, which exceeds the attachment size limit. 
 
-[contributors-shield]: https://img.shields.io/github/contributors/liutaocode/talking-face-arxiv-daily.svg?style=for-the-badge
-[contributors-url]: https://github.com/liutaocode/talking-face-arxiv-daily/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/liutaocode/talking-face-arxiv-daily.svg?style=for-the-badge
-[forks-url]: https://github.com/liutaocode/talking-face-arxiv-daily/network/members
-[stars-shield]: https://img.shields.io/github/stars/liutaocode/talking-face-arxiv-daily.svg?style=for-the-badge
-[stars-url]: https://github.com/liutaocode/talking-face-arxiv-daily/stargazers
-[issues-shield]: https://img.shields.io/github/issues/liutaocode/talking-face-arxiv-daily.svg?style=for-the-badge
-[issues-url]: https://github.com/liutaocode/talking-face-arxiv-daily/issues
+[contributors-shield]: https://img.shields.io/github/contributors/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
+[contributors-url]: https://github.com/runjtu/vpr-arxiv-daily/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
+[forks-url]: https://github.com/runjtu/vpr-arxiv-daily/network/members
+[stars-shield]: https://img.shields.io/github/stars/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
+[stars-url]: https://github.com/runjtu/vpr-arxiv-daily/stargazers
+[issues-shield]: https://img.shields.io/github/issues/runjtu/vpr-arxiv-daily.svg?style=for-the-badge
+[issues-url]: https://github.com/runjtu/vpr-arxiv-daily/issues
 
