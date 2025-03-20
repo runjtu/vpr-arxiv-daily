@@ -1,10 +1,10 @@
-title: CV Arxiv Daily
-description: Automatically Update CV Papers Daily using Github Actions (Update Every 8th hours)
+title: Arxiv Daily
+description: Automatically update interested arXiv papers daily using Github Actions (Update every 8th hours)
 show_downloads: true
 
 github:
-  zip_url: https://github.com/Vincentqyw/cv-arxiv-daily
-  another_url: https://github.com/Vincentqyw/cv-arxiv-daily
+  zip_url: https://github.com/runjtu/vpr-arxiv-daily
+  another_url: https://github.com/runjtu/vpr-arxiv-daily
 
 ## add remote theme
 remote_theme: jekyll/minima@v2.5.1
@@ -12,8 +12,8 @@ remote_theme: jekyll/minima@v2.5.1
 # minima:
 skin: dark
 social_links:
-  twitter: AlphaRealcat
-  github: vincentqyw
+  twitter: 
+  github: lidq92
 
 plugins:
  - jekyll-remote-theme # add this line to the plugins list if you already have one

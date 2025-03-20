@@ -1,30 +1,42 @@
 # TODO: add papers by configuration file
 base_url: "https://arxiv.paperswithcode.com/api/v0/papers/"
-user_name: "runjtu"
-repo_name: "vpr-arxiv-daily"
+user_name: "lidq92"
+repo_name: "arxiv-daily"
 show_authors: True
 show_links: True
 show_badge: True
-max_results: 10
+max_results: 20
 
 publish_readme: True
 publish_gitpage: True
-publish_wechat: True
+publish_wechat: False #
 
 # file paths
-black_list_path: 'blacklists.txt'
-recent_trend_path: './pdf_analysis/recent_trends.txt'
-json_readme_path: './docs/cv-arxiv-daily.json'
-json_gitpage_path: './docs/cv-arxiv-daily-web.json'
-json_wechat_path: './docs/cv-arxiv-daily-wechat.json'
+json_readme_path: './docs/arxiv-daily.json'
+json_gitpage_path: './docs/arxiv-daily-web.json'
+json_wechat_path: './docs/arxiv-daily-wechat.json'
 
 md_readme_path: 'README.md'
-claudeai_path: 'analysis_by_ai.md'
 md_gitpage_path: './docs/index.md'
 md_wechat_path: './docs/wechat.md'
 
 # keywords to search
+# topics: task/technique/dataset...
 keywords:
-
    "General Place Recognition": 
-        filters: ["Visual Place Recognition", "Geo Localization", "VLAD", "SfM", "Structure from Motion", "image retrieval", "GS SLAM", "Large Scale NeRF", "Re-Localization", "LiDAR Place Recognition", "Range Sensor Recognition", "Loop Closure Detection", "CSLAM", "Crowd-Sourced Mapping", "Scene Understanding"]
+        filters: ["Visual Place Recognition", 
+                  "Geo Localization", 
+                  "VLAD", 
+                  "SfM", 
+                  "Structure from Motion", 
+                  "image retrieval", 
+                  "GS SLAM", 
+                  "Large Scale NeRF", 
+                  "Re-Localization", 
+                  "LiDAR Place Recognition", 
+                  "Range Sensor Recognition", 
+                  "Loop Closure Detection", 
+                  "CSLAM", 
+                  "Crowd-Sourced Mapping", 
+                  "Scene Understanding"]
+

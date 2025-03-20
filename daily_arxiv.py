@@ -54,22 +54,14 @@ def get_authors(authors, first_author = False):
     else:
         output = authors[0]
     return output
-
 def sort_papers(papers):
     output = dict()
-
-    # sort by time
-    time_based_list = []
-    for k, v in papers.items():
-        # import pdb;pdb.set_trace()
-        year_month_day = v.split("**")[1]
-        time_based_list.append((year_month_day, k))
-    
-    time_based_list.sort(reverse=True)
-    
-    for _, key in time_based_list:
+    keys = list(papers.keys())
+    keys.sort(reverse=True)
+    for key in keys:
         output[key] = papers[key]
-    return output
+    return output    
+import requests
 
 def get_code_link(qword:str) -> str:
     """
@@ -247,15 +239,8 @@ def update_json_file(filename,data_dict):
 
     with open(filename,"w") as f:
         json.dump(json_data,f)
-
-def contains_any_title(str, 
-                       set):
-    return any(s in str for s in set)
-
-def json_to_md(recent_trend_path,
-               filename,
-               md_filename,
-               black_list_set,
+    
+def json_to_md(filename,md_filename,
                task = '',
                to_web = False, 
                use_title = True, 
@@ -307,32 +292,17 @@ def json_to_md(recent_trend_path,
             f.write(f"[![Forks][forks-shield]][forks-url]\n")
             f.write(f"[![Stargazers][stars-shield]][stars-url]\n")
             f.write(f"[![Issues][issues-shield]][issues-url]\n\n")    
-        
-        f.write("# vpr Research Papers (With GPT Analysis)\n")
+                
         if use_title == True:
             #f.write(("<p align="center"><h1 align="center"><br><ins>vpr-arxiv-daily"
-            #         "</ins><br>Automatically Update CV Papers Daily</h1></p>\n"))
-            f.write("### Automatically Updated on " + DateNow + "\n")
+            #         "</ins><br>Automatically Update Interested arXiv Papers Daily</h1></p>\n"))
+            f.write("## Updated on " + DateNow + "\n")
         else:
             f.write("> Updated on " + DateNow + "\n")
 
         # TODO: add usage
-        f.write("Current Search Keywords: `Talking Face`, `Talking Head`, `Visual Dubbing`, `Face Genertation`, `Lip Sync`, `Talker`, `Portrait`, `Talking Video`, `Head Synthesis`, `Face Reenactment`, `Wav2Lip`, `Talking Avatar`, `Lip Generation`, `Lip-Synchronization`, `Portrait Animation`, `Facial Animation`, `Lip Expert`\n\n")
-        f.write("> If you have any other keywords, please feel free to let us know :) \n\n")
-        f.write("> We now offer support for article analysis through large language models. You can view this feature by clicking the `Paper Analysis` link below. Currently, we are experimenting with `Claude.ai` or `Moonshot AI`. This is to help everyone **quickly skim** through the latest research papers. \n\n")
-        f.write(" \n\n")
+        f.write("> Usage instructions: [here](./docs/README.md#usage)\n\n")
 
-        recent_trend = open(recent_trend_path).read()
-        f.write("<details>\n")
-        f.write("  <summary>Recent Trends (by AI)</summary>\n")
-        f.write("  <ol>\n")    
-        f.write(f"    <li>{recent_trend}</li>\n")
-        f.write("  </ol>\n")
-        f.write("</details>\n\n")
-
-        f.write("[>>>> Each Paper Analysis (by AI) <<<<](https://github.com/runjtu/vpr-arxiv-daily/blob/main/analysis_by_ai.md) \n\n")
-        f.write("[Web Page](https://runjtu.github.io/vpr-arxiv-daily/) ([Scrape Code](https://github.com/runjtu/vpr-arxiv-daily)) \n\n")
-        
         #Add: table of contents
         if use_tc == True:
             f.write("<details>\n")
@@ -351,8 +321,6 @@ def json_to_md(recent_trend_path,
             day_content = data[keyword]
             if not day_content:
                 continue
-            
-            
             # the head of each part
             f.write(f"## {keyword}\n\n")
 
@@ -368,11 +336,6 @@ def json_to_md(recent_trend_path,
         
             for _,v in day_content.items():
                 if v is not None:
-                    if v.startswith("|**1") or v.startswith("|**200"): # delete papers before deep-learning :)
-                        continue
-                    if contains_any_title(v, black_list_set):
-                        continue
-                    # import pdb;pdb.set_trace()
                     f.write(pretty_math(v)) # make latex pretty
 
             f.write(f"\n")
@@ -382,15 +345,7 @@ def json_to_md(recent_trend_path,
                 top_info = f"#Updated on {DateNow}"
                 top_info = top_info.replace(' ','-').replace('.','')
                 f.write(f"<p align=right>(<a href={top_info.lower()}>back to top</a>)</p>\n\n")
-        
-        f.write("Notes: \n\n")
-        f.write("* We have modified the `sorting rule` of the above table to prioritize papers based on the time of their latest update rather than their initial publication date. If an article has been recently modified, it will appear earlier in the list. \n\n")
-        f.write("* However, recent trends are still based on `ten` papers sorted by the initial publication date. \n\n")
-        f.write("Function added: \n\n")
-        f.write("* Support more reliable text parser. [Link](https://github.com/pdfminer/pdfminer.six) \n\n")
-        f.write("* Support rich markdown format (better at parsing experimental tables). [Link](https://github.com/davendw49/sciparser) \n\n")
-        f.write("* Supports the analysis of more than 10 papers in a single conversation, which exceeds the attachment size limit. \n\n")
-        
+            
         if show_badge == True:
             # we don't like long string, break it!
             f.write((f"[contributors-shield]: https://img.shields.io/github/"
@@ -423,13 +378,6 @@ def demo(**config):
     publish_gitpage = config['publish_gitpage']
     publish_wechat = config['publish_wechat']
     show_badge = config['show_badge']
-    black_list_path = config['black_list_path']
-    recent_trend_path = config['recent_trend_path']
-
-    black_list_set = set() # some papers in this set will be excluded
-    with open(black_list_path, 'r') as file:
-        for line in file:
-            black_list_set.add(line.strip()) 
 
     b_update = config['update_paper_links']
     logging.info(f'Update Paper Link = {b_update}')
@@ -455,7 +403,7 @@ def demo(**config):
             # update json data
             update_json_file(json_file,data_collector)
         # json data to markdown
-        json_to_md(recent_trend_path, json_file, md_file, black_list_set, task ='Update Readme', \
+        json_to_md(json_file,md_file, task ='Update Readme', \
             show_badge = show_badge)
 
     # 2. update docs/index.md file (to gitpage)
@@ -467,9 +415,8 @@ def demo(**config):
             update_paper_links(json_file)
         else:    
             update_json_file(json_file,data_collector)
-        json_to_md(recent_trend_path, json_file, md_file, black_list_set, task ='Update GitPage', \
-            to_web = True, show_badge = show_badge, \
-            use_tc=False, use_b2t=False)
+        json_to_md(json_file, md_file, task ='Update GitPage', \
+            to_web = True, use_tc=False, show_badge = show_badge, use_b2t=False) #
 
     # 3. Update docs/wechat.md file
     if publish_wechat:
@@ -480,7 +427,7 @@ def demo(**config):
             update_paper_links(json_file)
         else:    
             update_json_file(json_file, data_collector_web)
-        json_to_md(recent_trend_path, json_file, md_file, black_list_set, task ='Update Wechat', \
+        json_to_md(json_file, md_file, task ='Update Wechat', \
             to_web=False, use_title= False, show_badge = show_badge)
 
 if __name__ == "__main__":
