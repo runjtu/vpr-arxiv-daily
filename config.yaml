@@ -20,7 +20,7 @@ md_readme_path: 'README.md'
 # keywords to search
 # topics: task/technique/dataset...
 keywords:
-   "General Place Recognition": 
+   "Spatial AI": 
         filters: ["Visual Place Recognition", 
                   "Geo Localization", 
                   "VLAD", 
@@ -35,6 +35,6 @@ keywords:
                   "Loop Closure Detection", 
                   "CSLAM", 
                   "Crowd-Sourced Mapping", 
-                  "Scene Understanding",
+                  "Scene Understanding", 
                   "VLN"]
 
