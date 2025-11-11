@@ -21,12 +21,10 @@ md_readme_path: 'README.md'
 # topics: task/technique/dataset...
 keywords:
    "Spatial AI": 
-        filters: [ 
-                  "Vision Language Navigation",  
+        filters: ["Vision Language Navigation",  
                   "Large Scale NeRF", 
                   "Scene Understanding",
                   "Geo Localization"]
-    "Localization and Mapping": 
-        filters: ["GS SLAM", "CSLAM", "Crowd-Sourced Mapping", "Loop Closure Detection", "Re-Localization", "LiDAR Place Recognition", "Range Sensor Recognition", "Structure from Motion", "Visual Place Recognition", 
-                  "VLAD","image retrieval"]
+   "Localization and Mapping": 
+        filters: ["GS SLAM", "CSLAM", "Crowd-Sourced Mapping", "Loop Closure Detection", "Re-Localization", "LiDAR Place Recognition", "Range Sensor Recognition", "Structure from Motion", "Visual Place Recognition", "VLAD","image retrieval"]
 
