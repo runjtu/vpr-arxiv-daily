@@ -141,7 +141,8 @@ def get_daily_papers(topic, query="agent", max_results=2):
     print("-----------------")
     print(f"query is {query}")
     print("-----------------")
-    client = arxiv.Client()
+    # client = arxiv.Client()
+    client = arxiv.Client(delay_seconds=5.0, num_retries=0)
     search = arxiv.Search(
         query=query,
         max_results=max_results,
