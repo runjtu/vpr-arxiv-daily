@@ -24,7 +24,7 @@ keywords:
         filters: ["Visual Place Recognition", 
                   "Geo Localization", 
                   "VLAD", 
-                  "SfM", 
+                  "Vision Language Navigation", 
                   "Structure from Motion", 
                   "image retrieval", 
                   "GS SLAM", 
@@ -35,6 +35,5 @@ keywords:
                   "Loop Closure Detection", 
                   "CSLAM", 
                   "Crowd-Sourced Mapping", 
-                  "Scene Understanding", 
-                  "VLN"]
+                  "Scene Understanding"]
 
