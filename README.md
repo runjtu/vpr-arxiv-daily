@@ -12,11 +12,21 @@
 
 |Publish Date|Title|Authors|PDF|Code|abstract|
 |---|---|---|---|---|---|
+|**2025-11-10**|**Inference-Time Scaling of Diffusion Models for Infrared Data Generation**|Kai A. Horstmann et.al.|[2511.07362](http://arxiv.org/abs/2511.07362)|null|
+|**2025-11-10**|**PlanT 2.0: Exposing Biases and Structural Flaws in Closed-Loop Driving**|Simon Gerstenecker et.al.|[2511.07292](http://arxiv.org/abs/2511.07292)|null|
+|**2025-11-10**|**Omni-View: Unlocking How Generation Facilitates Understanding in Unified 3D Model based on Multiview images**|JiaKui Hu et.al.|[2511.07222](http://arxiv.org/abs/2511.07222)|null|
+|**2025-11-10**|**TrueCity: Real and Simulated Urban Data for Cross-Domain 3D Scene Understanding**|Duc Nguyen et.al.|[2511.07007](http://arxiv.org/abs/2511.07007)|null|
+|**2025-11-10**|**Semi-distributed Cross-modal Air-Ground Relative Localization**|Weining Lu et.al.|[2511.06749](http://arxiv.org/abs/2511.06749)|null|
+|**2025-11-09**|**Video Dataset for Surgical Phase, Keypoint, and Instrument Recognition in Laparoscopic Surgery (PhaKIR)**|Tobias Rueckert et.al.|[2511.06549](http://arxiv.org/abs/2511.06549)|null|
+|**2025-11-09**|**DiffusionUavLoc: Visually Prompted Diffusion for Cross-View UAV Localization**|Tao Liu et.al.|[2511.06422](http://arxiv.org/abs/2511.06422)|null|
+|**2025-11-08**|**Towards Implicit Aggregation: Robust Image Representation for Place Recognition in the Transformer Era**|Feng Lu et.al.|[2511.06024](http://arxiv.org/abs/2511.06024)|null|
+|**2025-11-08**|**Open-World 3D Scene Graph Generation for Retrieval-Augmented Reasoning**|Fei Yu et.al.|[2511.05894](http://arxiv.org/abs/2511.05894)|null|
+|**2025-11-07**|**Lite VLA: Efficient Vision-Language-Action Control on CPU-Bound Edge Robots**|Justin Williams et.al.|[2511.05642](http://arxiv.org/abs/2511.05642)|null|
 |**2025-11-07**|**Multi-modal Loop Closure Detection with Foundation Models in Severely Unstructured Environments**|Laura Alejandra Encinar Gonzalez et.al.|[2511.05404](http://arxiv.org/abs/2511.05404)|null|
 |**2025-11-07**|**DAFM: Dynamic Adaptive Fusion for Multi-Model Collaboration in Composed Image Retrieval**|Yawei Cai et.al.|[2511.05020](http://arxiv.org/abs/2511.05020)|null|
 |**2025-11-06**|**CaRF: Enhancing Multi-View Consistency in Referring 3D Gaussian Splatting Segmentation**|Yuwen Tao et.al.|[2511.03992](http://arxiv.org/abs/2511.03992)|null|
 |**2025-11-06**|**Simple 3D Pose Features Support Human and Machine Social Scene Understanding**|Wenshuo Qin et.al.|[2511.03988](http://arxiv.org/abs/2511.03988)|null|
-|**2025-11-06**|**SurgViVQA: Temporally-Grounded Video Question Answering for Surgical Scene Understanding**|Mauro Orazio Drago et.al.|[2511.03325](http://arxiv.org/abs/2511.03325)|**[link](https://github.com/madratak/SurgViVQA)**|
+|**2025-11-06**|**SurgViVQA: Temporally-Grounded Video Question Answering for Surgical Scene Understanding**|Mauro Orazio Drago et.al.|[2511.03325](http://arxiv.org/abs/2511.03325)|null|
 |**2025-11-04**|**Object Detection as an Optional Basis: A Graph Matching Network for Cross-View UAV Localization**|Tao Liu et.al.|[2511.02489](http://arxiv.org/abs/2511.02489)|null|
 |**2025-11-04**|**LUMA-RAG: Lifelong Multimodal Agents with Provably Stable Streaming Alignment**|Rohan Wandre et.al.|[2511.02371](http://arxiv.org/abs/2511.02371)|null|
 |**2025-11-04**|**Cycle-Sync: Robust Global Camera Pose Estimation through Enhanced Cycle-Consistent Synchronization**|Shaohan Li et.al.|[2511.02329](http://arxiv.org/abs/2511.02329)|null|
