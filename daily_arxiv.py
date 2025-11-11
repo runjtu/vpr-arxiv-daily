@@ -23,30 +23,30 @@ arxiv_url = "http://arxiv.org/"
 
 def load_config(config_file: str) -> dict:
     '''
-    config_file: input config file path
-    return: a dict of configuration
+    Load configuration from a given YAML file and format the filters properly.
+    
+    :param config_file: input config file path
+    :return: a dictionary of configuration
     '''
-    # make filters pretty
+    # Function to make filters pretty
     def pretty_filters(**config) -> dict:
-        keywords = dict()
-        EXCAPE = '\"'
-        QUOTA = ''  # NO-USE
-        OR = 'OR'  # TODO
-
+        keywords = {}
+        EXCAPE = '\"'  # Escape character for multi-word terms
+        OR = ' OR '   # Boolean operator with spaces for correct query formation
+        
         def parse_filters(filters: list):
-            ret = ''
-            for idx in range(0, len(filters)):
-                filter = filters[idx]
-                if len(filter.split()) > 1:
-                    ret += (EXCAPE + filter + EXCAPE)
+            ret = []
+            for filter in filters:
+                if len(filter.split()) > 1 or '-' in filter:  # If term is multi-word or contains hyphen
+                    ret.append(EXCAPE + filter + EXCAPE)
                 else:
-                    ret += (QUOTA + filter + QUOTA)
-                if idx != len(filters) - 1:
-                    ret += OR
-            return ret
+                    ret.append(filter)  # Single word term, no need for quotes
+            return OR.join(ret)  # Join with ' OR ' instead of direct concatenation
+        
         for k, v in config['keywords'].items():
             keywords[k] = parse_filters(v['filters'])
         return keywords
+    
     with open(config_file, 'r') as f:
         config = yaml.load(f, Loader=yaml.FullLoader)
         config['kv'] = pretty_filters(**config)
