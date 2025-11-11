@@ -394,6 +394,8 @@ def json_to_md(filename, md_filename,
 
         # TODO: add usage
         f.write("> Usage instructions: [here](./docs/README.md#usage)\n\n")
+        f.write("> Current Search Keywords: `Visual Place Recognition`, `Geo Localization`, `VLAD`, `SfM`, `Structure from Motion`, `image retrieval`, `GS SLAM`, `Large Scale NeRF`, `Re-Localization`, `LiDAR Place Recognition`, `Range Sensor Recognition`, `Loop Closure Detection`, `CSLAM`, `Crowd-Sourced Mapping`, `Scene Understanding`\n\n")
+
 
         # Add: table of contents
         if use_tc == True:
