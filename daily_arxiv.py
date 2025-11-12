@@ -203,7 +203,7 @@ def get_daily_papers(topic, query="agent", max_results=2):
                 content_to_web[paper_key] += f"\n"
     except arxiv.HTTPError as e:
         if e.status in (429, 503):
-            logging.warning(f"[{e.status_code}] Skipped topic '{topic}' due to rate limit or server error.")
+            logging.warning(f"[{e.status}] Skipped topic '{topic}' due to rate limit or server error.")
         else:
             raise
 
