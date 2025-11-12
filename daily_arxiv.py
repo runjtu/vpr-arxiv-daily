@@ -388,32 +388,56 @@ def update_paper_links(filename):
         with open(filename, "w") as f:
             json.dump(json_data, f)
 
-
 def update_json_file(filename, data_dict):
     '''
     daily update json file using data_dict
     '''
-    with open(filename, "r") as f:
-        content = f.read()
-        if not content:
-            m = {}
-        else:
-            m = json.loads(content)
-
-    json_data = m.copy()
-
-    # update papers in each keywords
-    for data in data_dict:
-        for keyword in data.keys():
-            papers = data[keyword]
-
-            if keyword in json_data.keys():
-                json_data[keyword].update(papers)
+    import json
+    try:
+        with open(filename, "r", encoding="utf-8") as f:
+            content = f.read()
+            if not content:
+                json_data = {}
             else:
-                json_data[keyword] = papers
+                json_data = json.loads(content)
+    except FileNotFoundError:
+        json_data = {}
 
-    with open(filename, "w") as f:
-        json.dump(json_data, f)
+    # Merge new papers into existing data
+    for keyword, papers in data_dict.items():
+        if keyword in json_data:
+            json_data[keyword].update(papers)
+        else:
+            json_data[keyword] = papers
+
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(json_data, f, ensure_ascii=False, indent=2)
+      
+# def update_json_file(filename, data_dict):
+#     '''
+#     daily update json file using data_dict
+#     '''
+#     with open(filename, "r") as f:
+#         content = f.read()
+#         if not content:
+#             m = {}
+#         else:
+#             m = json.loads(content)
+
+#     json_data = m.copy()
+
+#     # update papers in each keywords
+#     for data in data_dict:
+#         for keyword in data.keys():
+#             papers = data[keyword]
+
+#             if keyword in json_data.keys():
+#                 json_data[keyword].update(papers)
+#             else:
+#                 json_data[keyword] = papers
+
+#     with open(filename, "w") as f:
+#         json.dump(json_data, f)
 
 
 # def json_to_md(filename, md_filename,
@@ -636,9 +660,6 @@ def json_to_md(filename, md_filename,
 
 def demo(**config):
     # TODO: use config
-    data_collector = []
-    data_collector_web = []
-
     keywords = config['kv']
     max_results = config['max_results']
     publish_readme = config['publish_readme']
@@ -648,14 +669,20 @@ def demo(**config):
     logging.info(f'Update Paper Link = {b_update}')
     if config['update_paper_links'] == False:
         logging.info(f"GET daily papers begin")
+        data_all = {}
+        data_all_web = {}
         for topic, keyword in keywords.items():
             print(keyword)
             print("=========================")
             logging.info(f"Keyword: {topic}")
-            data, data_web = get_daily_papers(topic, query=keyword,
-                                              max_results=max_results)
-            data_collector.append(data)
-            data_collector_web.append(data_web)
+            try:
+                data, data_web = get_daily_papers(topic, query=keyword,
+                                                  max_results=max_results)
+            except Exception as e:
+                logging.error(f"Error for {topic}: {e}")
+                data, data_web = {}, {}
+            data_all[topic] = data
+            data_all_web[topic] = data_web
             print("\n")
         logging.info(f"GET daily papers end")
 
@@ -668,10 +695,49 @@ def demo(**config):
             update_paper_links(json_file)
         else:
             # update json data
-            update_json_file(json_file, data_collector)
+            update_json_file(json_file, data_all)
         # json data to markdown
         json_to_md(json_file, md_file, task='Update Readme',
                    show_badge=show_badge)
+      
+# def demo(**config):
+#     # TODO: use config
+#     data_collector = []
+#     data_collector_web = []
+
+#     keywords = config['kv']
+#     max_results = config['max_results']
+#     publish_readme = config['publish_readme']
+#     show_badge = config['show_badge']
+
+#     b_update = config['update_paper_links']
+#     logging.info(f'Update Paper Link = {b_update}')
+#     if config['update_paper_links'] == False:
+#         logging.info(f"GET daily papers begin")
+#         for topic, keyword in keywords.items():
+#             print(keyword)
+#             print("=========================")
+#             logging.info(f"Keyword: {topic}")
+#             data, data_web = get_daily_papers(topic, query=keyword,
+#                                               max_results=max_results)
+#             data_collector.append(data)
+#             data_collector_web.append(data_web)
+#             print("\n")
+#         logging.info(f"GET daily papers end")
+
+#     # 1. update README.md file
+#     if publish_readme:
+#         json_file = config['json_readme_path']
+#         md_file = config['md_readme_path']
+#         # update paper links
+#         if config['update_paper_links']:
+#             update_paper_links(json_file)
+#         else:
+#             # update json data
+#             update_json_file(json_file, data_collector)
+#         # json data to markdown
+#         json_to_md(json_file, md_file, task='Update Readme',
+#                    show_badge=show_badge)
 
 
 if __name__ == "__main__":
