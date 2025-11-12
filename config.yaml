@@ -24,7 +24,5 @@ keywords:
         filters: ["Vision Language Navigation",  
                   "Large Scale NeRF", 
                   "Scene Understanding",
-                  "Geo Localization"]
-   "Localization and Mapping": 
-        filters: ["GS SLAM", "CSLAM", "Crowd-Sourced Mapping", "Loop Closure Detection", "Re-Localization", "LiDAR Place Recognition", "Range Sensor Recognition", "Structure from Motion", "Visual Place Recognition", "VLAD","image retrieval"]
+                  "Geo Localization","GS SLAM", "CSLAM", "Crowd-Sourced Mapping", "Loop Closure Detection", "Re-Localization", "LiDAR Place Recognition", "Range Sensor Recognition", "Structure from Motion", "Visual Place Recognition", "VLAD","image retrieval"]
 
