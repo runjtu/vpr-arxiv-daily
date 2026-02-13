@@ -1,4 +1,4 @@
-## Updated on 2026.02.12
+## Updated on 2026.02.13
 > Usage instructions: [here](./docs/README.md#usage)
 
 > Current Search Keywords: `Visual Place Recognition`, `Geo Localization`, `VLAD`, `Vision Language Navigation`, `Structure from Motion`, `image retrieval`, `GS SLAM`, `Large Scale NeRF`, `Re-Localization`, `LiDAR Place Recognition`, `Range Sensor Recognition`, `Loop Closure Detection`, `CSLAM`, `Crowd-Sourced Mapping`, `Scene Understanding`
